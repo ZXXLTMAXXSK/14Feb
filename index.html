@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Wendy+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="img/corazon.gif" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Wendy+One&display=swap" rel="stylesheet">
+    <title>xx/x/xxxx</title>
+</head>
+<body>
+    <header>
+        <img src="img/corazon.gif" class="img-logo" width="45">
+        <li>
+            <a href="htmls/parte2.html">Parte 2</a>
+        </li>
+        <li>
+            <a href="htmls/parte3.html">Parte 3</a>
+        </li>
+        <li>
+            <a href="htmls/parte4.html">Parte 4</a>
+        </li>
+        <li>
+            <a href="#seccionInicio">Inicio</a>
+        </li>
+    </header>
+    <nav>
+        <a href="#seccion2" class="se1">2</a>
+        <a href="#seccion3" class="se2">3</a>
+        <a href="#seccion4" class="se3">4</a>
+        <a href="#seccion5" class="se4">5</a>
+        <a href="#seccion6" class="se5">6</a>
+        <a href="#seccion7" class="se6">7</a>
+        <a href="#seccion8" class="se7">8</a>
+        <a href="#seccion9" class="se8">9</a>
+        <a href="#seccion10" class="se9">10</a>
+    </nav>
+    <section class="pre" id="seccionInicio">
+        <div class="animacion">
+            <span>M</span><span>y</span><br>
+            <span>S</span><span>a</span><span>n</span>
+            <span>V</span><span>a</span><span>l</span><span>e</span><span>n</span><span>t</span><span>i</span><span>n</span>
+        </div>
+        <br><br>
+        <a href="#seccion1" class="as">HISTORIA</a>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const letras = document.querySelectorAll(".animacion span");
+                let delay = 0;
+                
+                function animarLetras() {
+                    letras.forEach((letra, index) => {
+                        setTimeout(() => {
+                            letra.classList.add("active");
+                            setTimeout(() => {
+                                letra.classList.remove("active");
+                            }, 1000);
+                        }, delay);
+                        delay += 300;
+                    });
+                    delay = 0;
+                }
+                
+                setInterval(animarLetras, 4000);
+                animarLetras();
+            });
+        </script>
+    </section>
+    <section id="seccion1">
+        <div class="cont">
+            <div class="der">
+                <h1>El día que te conocí...</h1>
+                Mich, hace un año el destino me llevó a Puebla por prototipos, pero nunca imaginé que el verdadero prototipo perfecto que encontraría sería el de una amiga como tú. Fue un jueves, el último día, cuando te vi y supe que tenía que guardar ese momento, así que te pedí una foto. Quizá para ti fue algo simple, pero para mí fue el inicio de una historia que aún hoy seguimos escribiendo. Desde ese instante supe que eras alguien especial, porque no solo eras simpática y hermosa, sino que tenías una luz propia, una energía que hace que cualquier momento contigo se sienta diferente, como si el tiempo se detuviera solo para escucharte reír.</div>
+            <div class="iz">
+                <img src="img/p1.gif" width="240">
+                <p><br>
+                    Una Foto Solamente...
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="seccion2">
+        <div class="conte">
+            <div class="derecha">
+                <img src="img/mensaje.gif" width="250">
+                <p><br>
+                    Un solo mensaje...
+                </p>
+            </div>
+            <div class="izquierda">
+                <h1>Una amistad inesperada...</h1>
+                A veces pienso en lo curioso que es todo esto, cómo un solo encuentro, una sola conversación, pudo construir algo tan bonito como lo nuestro. Porque lo nuestro no es solo una amistad, es una conexión genuina, de esas que son difíciles de encontrar. Desde que empezamos a hablar por WhatsApp, descubrí que no solo eres alguien increíble en persona, sino que a través de cada mensaje, de cada audio, logras transmitir una calidez única. Hay días en los que nuestras charlas se convierten en lo mejor que me pasa, en el respiro que necesito, en el recordatorio de que alguien en este mundo me entiende de verdad.
+            </div>
+        </div>
+    </section>
+    <section id="seccion3">
+        <div class="cont">
+            <div class="der">
+                <h1>Más allá de la distancia...</h1>
+                Mich, ¿sabes qué es lo más bonito de todo esto? Que hemos construido algo sin importar la distancia, sin importar las horas o los kilómetros. Nos contamos todo, lo bueno, lo malo, los momentos de alegría y también aquellos en los que el mundo parece más gris. Me has escuchado en mis días difíciles y yo he estado ahí cuando tú lo necesitas. Y eso, para mí, vale más que cualquier otra cosa, porque no se trata solo de hablar, sino de saber que hay alguien al otro lado que de verdad te escucha, que se preocupa y que está presente, incluso sin estar físicamente cerca.</div>
+            <div class="iz">
+                <img src="img/distancia.gif" width="240">
+                <p><br>
+                    Puedo verte...
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="seccion4">
+        <div class="conte">
+            <div class="derecha">
+                <img src="img/mano.gif" width="250">
+                <p><br>
+                    Tranquilidad contigo...
+                </p>
+            </div>
+            <div class="izquierda">
+                <h1>Siempre aquí para ti...</h1>
+                Quiero que sepas que, aunque haya días en los que la vida nos haga sentir cansados o agobiados, yo siempre estaré aquí para ti. Porque tu amistad es un regalo que valoro como pocas cosas en esta vida. Eres esa persona con la que siempre puedo contar, con la que puedo hablar sin miedo, sin filtros, sin máscaras. No hay nada más bonito que ser completamente uno mismo con alguien, y contigo lo soy. Me gusta que podemos reír hasta que nos duela el estómago, pero también hablar de cosas profundas sin temor a ser juzgados.
+            </div>
+        </div>
+    </section>
+    <section id="seccion5">
+        <div class="cont">
+            <div class="der">
+                <h1>Cuando nos volvamos a ver...</h1>
+                Hay días en los que imagino el momento en que finalmente nos volvamos a ver. Sé que cuando eso pase, no importará cuánto tiempo haya pasado desde la última vez, porque nuestra amistad es de esas que no necesitan explicaciones ni preámbulos. Solo quiero estar ahí, compartir aunque sea un día contigo, hablar en persona de todo lo que ya hablamos por mensajes, ver tu sonrisa y decirte en vivo lo increíble que eres. Y no será solo un día, porque poco a poco encontraremos la manera de que no sea solo un encuentro, sino muchos más.</div>
+            <div class="iz">
+                <img src="img/valor.gif" width="240">
+                <p><br>
+                    Especial para mi...
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="seccion6">
+        <div class="conte">
+            <div class="derecha">
+                <img src="img/amigo.gif" width="250">
+                <p><br>
+                    Casualidad?...
+                </p>
+            </div>
+            <div class="izquierda">
+                <h1>No fue casualidad...</h1>
+                Me gusta pensar que la vida nos cruzó por una razón. No creo que haya sido casualidad, porque hay personas que llegan en el momento exacto y de la forma en que más las necesitas. Y tú llegaste así, como un respiro, como un rayo de luz en días que a veces parecían monótonos. Hay amistades que se sienten ligeras y otras que tienen peso, que dejan huella, que transforman. La nuestra es de esas que sabes que te van a acompañar siempre, sin importar lo que pase.
+            </div>
+        </div>
+    </section>
+    <section id="seccion7">
+        <div class="cont">
+            <div class="der">
+                <h1>Tu esencia en cada mensaje...</h1>
+                Eres atenta, detallista, cariñosa, divertida… eres el tipo de persona que cualquiera quisiera tener cerca. Y yo tengo la suerte de que, aunque no estés aquí físicamente, siempre encuentro un pedacito de ti en cada mensaje, en cada palabra que me dices. No importa la distancia, porque una amistad como la nuestra no la rompe ni el tiempo ni los kilómetros. Si algo tengo claro es que, aunque pase lo que pase, siempre vas a tenerme aquí, listo para escucharte, para apoyarte, para seguir construyendo recuerdos contigo.</div>
+            <div class="iz">
+                <img src="img/cario.gif" width="240">
+                <p><br>
+                    TKiero Muchoo...
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="seccion8">
+        <div class="conte">
+            <div class="derecha">
+                <img src="img/mundial.gif" width="240">
+                <p><br>
+                    Nos unimos más...
+                </p>
+            </div>
+            <div class="izquierda">
+                <h1>La amistad que rompe distancias...</h1>
+                A veces la gente dice que las amistades a la distancia no funcionan, pero yo creo que eso solo lo dicen los que nunca han tenido una como la nuestra. Porque lo que importa no es cuántas veces nos vemos, sino lo que compartimos en cada conversación. Y créeme, Mich, cada momento que hablo contigo es un momento que vale la pena, un momento en el que me doy cuenta de la suerte que tengo de haberte conocido.
+            </div>
+        </div>
+    </section>
+    <section id="seccion9">
+        <div class="cont">
+            <div class="der">
+                <h1>Cada palabra tuya deja huella...</h1>
+                Cuando llegue el día en que nos veamos otra vez, quiero que sepas que todo lo que hemos hablado, todo lo que hemos compartido, no ha sido en vano. Que cada mensaje que me has mandado ha significado algo, que cada palabra tuya me ha acompañado en momentos en los que lo he necesitado. Y que cuando finalmente podamos sentarnos cara a cara, todo lo que siento por nuestra amistad solo se hará más fuerte. Porque hay cosas que la vida te da solo una vez, y yo sé que tú eres una de ellas.</div>
+            <div class="iz">
+                <img src="img/sen.gif" width="240">
+                <p><br>
+                    Un día vamos al parque...
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="seccion10">
+        <div class="conte">
+            <div class="derecha">
+                <img src="img/correo.gif" width="240">
+                <p><br>
+                   ¿Te gusto mi carta?...
+                </p>
+            </div>
+            <div class="izquierda">
+                <h1>Una promesa para siempre...</h1>
+                Así que, Mich, este no es un simple mensaje, es una promesa. Una promesa de que, aunque pasen los días, aunque la vida nos lleve por caminos distintos, siempre habrá un espacio para ti en mi vida. Que un día, cuando menos lo esperes, estaré ahí para verte en persona y decirte todo esto con una sonrisa. Y que ese será solo el inicio de muchos encuentros más. Porque nuestra amistad merece más que solo pantallas, merece risas en vivo, abrazos reales y momentos que podamos recordar para siempre. 💙
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return rect.top >= 0 && rect.bottom <= window.innerHeight;
+        }
+        function showCardsOnScroll() {
+            const cards = document.querySelectorAll('.derecha, .izquierda, .der, .iz');
+            cards.forEach(card => {
+                if (isInViewport(card)) {
+                    card.style.opacity = 1;
+                }
+            });
+        }
+
+        // Ejecutar la función al hacer scroll
+        window.addEventListener('scroll', showCardsOnScroll);
+        // Verificar al cargar la página si ya están visibles
+        showCardsOnScroll();
+    </script>
+</body>
+</html>

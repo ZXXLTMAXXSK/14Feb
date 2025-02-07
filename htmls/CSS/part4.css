@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "Fuzzy Bubbles", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: "Fuzzy Bubbles", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+html::-webkit-scrollbar{
+    width: 1px;
+    background-color: #4C334D;
+}
+html::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #8E2DE2;
+}
+section{
+    width: 100%;
+    height: 125vh;
+    background-color: #4C334D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -23vh;
+    flex-direction: column;
+}
+body {
+    background: #8E2DE2;
+    background: -webkit-linear-gradient(to right, hsl(260, 100%, 44%, 0.688), hsla(272, 76%, 53%, 0.497)), url(../IMG/f2.jpg);
+    background: linear-gradient(to right, hsla(260, 100%, 44%, 0.688), hsl(272, 76%, 53%, 0.497)), url(../IMG/f2.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20% auto;
+}
+button {
+    padding: 10px 15px;
+    background: #002855;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+button:hover {
+    background: #023E7D;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+}
+
+.vis{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+@media (max-width: 900px){
+    .container{
+        width: 300px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 250px auto;
+    }
+}

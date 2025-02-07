@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/corazon.gif" type="image/x-icon">
+    <link rel="stylesheet" href="../htmls/CSS/part4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Wendy+One&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <title>xx/x/xxxx</title>
+</head>
+<body>
+    <section>
+        <script>
+            const text = "¿Opinion? Ven, Dime...";
+const colors = ["#A020F0", "#001845", "#023E7D"];
+const section = document.querySelector("section");
+const container = document.createElement("div");
+container.style.fontSize = "100px";
+container.style.fontWeight = "bold";
+container.style.display = "flex";
+container.style.gap = "5px";
+container.style.justifyContent = "center";
+section.appendChild(container);
+
+text.split("").forEach((char, index) => {
+    const span = document.createElement("span");
+    span.textContent = char;
+    span.style.transition = "color 0.5s ease-in-out";
+    container.appendChild(span);
+
+    setInterval(() => {
+        span.style.color = colors[(index + Math.floor(Date.now() / 500)) % colors.length];
+    }, 500);
+});
+
+        </script>
+        <a href="#car" class="vis">Redactar...</a>
+    </section>
+    <div class="container" id="car">
+        <h1>¿Quieres escribir una carta?</h1>
+        <button onclick="mostrarInput()">Escribir Carta</button>
+        <textarea id="carta" placeholder="Escribe tu carta aquí..."></textarea>
+        <button id="enviar" onclick="generarPDF()" style="display: none;">Enviar por WhatsApp</button>
+    </div>
+
+    <script>
+        function mostrarInput() {
+            document.getElementById("carta").style.display = "block";
+            document.getElementById("enviar").style.display = "inline-block";
+        }
+
+        function generarPDF() {
+            const { jsPDF } = window.jspdf;
+            let doc = new jsPDF();
+            let texto = document.getElementById("carta").value;
+
+            if (texto.trim() === "") {
+                alert("Por favor, escribe algo en la carta.");
+                return;
+            }
+
+            doc.text(texto, 10, 20);
+            doc.save("carta.pdf");
+            let numero = "5581349557";
+            let mensaje = encodeURIComponent(texto);
+            window.open(`https://wa.me/${numero}?text=${mensaje}`, "_blank");
+        }
+    </script>
+</body>
+</html>

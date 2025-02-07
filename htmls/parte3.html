@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/corazon.gif" type="image/x-icon">
+    <link rel="stylesheet" href="../htmls/CSS/part3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Wendy+One&display=swap" rel="stylesheet">
+    <title>xx/x/xxxx</title>
+</head>
+<body>
+    <div class="container">
+        <video id="bgVideo" autoplay muted>
+            <source src="../htmls/IMG/fondograp.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <div class="map">
+                <h1>Ser Parte</h1>
+                <h2>Tu canción Fav</h2>
+            </div>
+            <button id="playPauseBtn">Reproducir Música</button>
+            <a href="../index.html" class="regre">Volver</a>
+        </div>
+    </div>
+    
+    <script>
+        const video = document.getElementById("bgVideo");
+        const playPauseBtn = document.getElementById("playPauseBtn");
+    
+        playPauseBtn.addEventListener("click", function () {
+            if (video.muted) {
+                video.muted = false;
+                video.play();
+                playPauseBtn.textContent = "Pausar Música";
+            } else {
+                video.muted = true;
+                video.pause();
+                playPauseBtn.textContent = "Reproducir Música";
+            }
+        });
+    </script>
+</body>
+</html>
